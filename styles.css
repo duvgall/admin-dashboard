@@ -4,17 +4,86 @@
 }
 
 .container {
+    background-color: yellow;
+    height: 100vh;
+    width: auto;
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
 
+.header {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    grid-column: 2 / span3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search {
+    background-color: beige;
+    border: 1px solid black;
+    height: 20px;
+}
+
+.settings {
+    background-color: beige;
+    border: 1px solid black;
+    height: 20px;
+}
+
+.profile {
+    background-color: beige;
+    border: 1px solid black;
+    height: 20px;
+}
+
+.navbar {
+    background-color: beige;
+    border: 1px solid black;
+    height: 20px;
 }
 
 .sidebar {
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    grid-row: 1 / span 4
+}
 
+.dashboard-header {
+    background-color: beige;
+}
+
+.side-menu {
+    background-color: beige;
+}
+
+.user-support {
+    background-color: beige;
 }
 
 .projects {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    grid-row: 2 / span 4;
+}
 
+.project-tile {
+    background-color: beige;
 }
 
 .latest {
-    
+    background-color: green; 
+}
+
+.announcements {
+    background-color: beige;
+}
+
+.trending {
+    background-color: beige;
 }
