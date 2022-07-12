@@ -13,7 +13,7 @@
 }
 
 .header {
-    background-color: blue;
+    background-color: rgb(19, 130, 168);
     height: 100%;
     width: 100%;
     grid-column: 2 / span3;
@@ -24,31 +24,55 @@
 }
 
 .search {
-    background-color: beige;
-    border: 1px solid black;
-    height: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search div{
+    width: 30px;
+}
+
+.search-icon {
+    width: 50%;
 }
 
 .settings {
-    background-color: beige;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-icon {
     border: 1px solid black;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 .profile {
-    background-color: beige;
-    border: 1px solid black;
-    height: 40px;
+    height: 80px;
+    display:flex;
+    align-items: center;
 }
 
 .navbar {
-    background-color: beige;
-    border: 1px solid black;
-    height: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-btn {
+    width: 20%;
+    height: 50%;
+    background-color: lightskyblue;
+    border-radius: 8%;
 }
 
 .sidebar {
-    background-color: aqua;
+    background-color: rgb(19, 130, 168);
     height: 100vh;
     width: 100%;
     grid-row: 1 / span 4;
@@ -59,25 +83,29 @@
 }
 
 .dashboard-header {
-    background-color: beige;
-    border: 1px solid black;
-    height: 40px;
+    height: 50%;
+    text-align: center
+
 }
 
 .side-menu {
-    background-color: beige;
-    border: 1px solid black;
-    height: 40px;
+    height: 70%;
+    text-align:center;
+    list-style: none;
 }
 
 .user-support {
-    background-color: beige;
-    border: 1px solid black;
-    height: 40px;
+    height: 60%;
+    text-align: center;
+    list-style: none;
+}
+
+.list-item {
+    color: white;
 }
 
 .projects {
-    background-color: red;
+    background-color: rgb(177, 224, 240);
     height: 100%;
     width: 100%;
     grid-row: 2 / span 4;
@@ -88,29 +116,52 @@
 }
 
 .project-tile {
-    background-color: beige;
+    background-color: rgb(5, 175, 235);
     border: 1px solid black;
-    height: 40px;
+    width: 80%;
+    height: auto;
 }
 
 .latest {
-    background-color: green; 
+    background-color: rgb(177, 224, 240); 
     border: 1px solid black;
-    height: 40px;
-    display: grid;
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
+    gap: 30px;*/
+}
+
+.announcements-container {
+    background-color: beige;
+    border: 1px solid black;
+    height: 25%;
 }
 
 .announcements {
     background-color: beige;
     border: 1px solid black;
-    height: 40px;
+    height: 33%;
+}
+
+
+.trend-container {
+    background-color: beige;
+    border: 1px solid black;
+    height: 25%;
 }
 
 .trending {
     background-color: beige;
     border: 1px solid black;
-    height: 40px;
+    height: 33%;
+}
+
+#searchbar {
+    border-radius: 8%;
+    width: 80%;
+    height: 40%;
 }
