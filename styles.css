@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+body {
+    font-family: "Roboto-Regular";
+}
+
+hr {
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
 .container {
     background-color: yellow;
     height: 100vh;
@@ -13,7 +22,7 @@
 }
 
 .header {
-    background-color: rgb(19, 130, 168);
+    background-color: #fff7ed;
     height: 100%;
     width: 100%;
     grid-column: 2 / span3;
@@ -65,14 +74,17 @@
 }
 
 .nav-btn {
-    width: 20%;
-    height: 50%;
-    background-color: lightskyblue;
+    color: #fff7ed; 
+    font-size:larger;
+    width: 25%;
+    height: 55%;
+    background-color: #9a3412;
     border-radius: 8%;
+    font-family: "Roboto";
 }
 
 .sidebar {
-    background-color: rgb(19, 130, 168);
+    background-color: #ea580c;
     height: 100vh;
     width: 100%;
     grid-row: 1 / span 4;
@@ -84,28 +96,48 @@
 
 .dashboard-header {
     height: 50%;
-    text-align: center
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.sidebar ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
 .side-menu {
     height: 70%;
-    text-align:center;
-    list-style: none;
+    text-align: center;
+    justify-self: left;
+    margin-left: 20%;
 }
 
 .user-support {
     height: 60%;
     text-align: center;
-    list-style: none;
+    justify-self: left;
+    margin-left: 20%;
+    
+    
 }
 
 .list-item {
     color: white;
+    font-size: larger;
+    text-align: left;
+
+}
+
+.menu-img{
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
 }
 
 .projects {
-    background-color: rgb(177, 224, 240);
+    background-color: #fed7aa;
     height: 100%;
     width: 100%;
     grid-row: 2 / span 4;
@@ -116,47 +148,44 @@
 }
 
 .project-tile {
-    background-color: rgb(5, 175, 235);
-    border: 1px solid black;
-    width: 80%;
+    background-color: #fff7ed;
+    border-left: 4px solid #fb923c;
+    width: 95%;
     height: auto;
+    margin: 2% 2% 2% 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
 }
 
+
 .latest {
-    background-color: rgb(177, 224, 240); 
-    border: 1px solid black;
+    background-color: #fed7aa; 
     grid-row: 2 / span 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
-    /*display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;*/
 }
 
 .announcements-container {
-    background-color: beige;
-    border: 1px solid black;
+    background-color: #fff7ed;
     height: 25%;
 }
 
 .announcements {
     background-color: beige;
-    border: 1px solid black;
     height: 33%;
 }
 
 
 .trend-container {
     background-color: beige;
-    border: 1px solid black;
     height: 25%;
 }
 
 .trending {
     background-color: beige;
-    border: 1px solid black;
     height: 33%;
 }
 
